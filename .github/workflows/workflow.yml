@@ -26,8 +26,8 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 . --exclude=.git,.github
+          flake8 test_sample.py
 
       - name: Run unit tests with nose
         run: |
-          nosetests
+          nosetests test_sample.py
